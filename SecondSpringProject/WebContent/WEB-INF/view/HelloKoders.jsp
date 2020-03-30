@@ -5,7 +5,11 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/style.css">
+
 </head>
+
 <body>
 
 	Hello ${param.koderName}. Welcome to Spring	course.
@@ -15,6 +19,8 @@
 		${name}
 	
 	</p>
+	
+	<img alt="profile picture" src="${pageContext.request.contextPath}/resources/images/back.png">
 
 </body>
 </html>
