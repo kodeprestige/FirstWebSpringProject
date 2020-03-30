@@ -8,7 +8,13 @@
 </head>
 <body>
 
-Hello ${param.koderName}. Welcome to Spring	course.
+	Hello ${param.koderName}. Welcome to Spring	course.
+
+	<p><br>
+		<h2>Attention everyone!!</h2>
+		${name}
+	
+	</p>
 
 </body>
 </html>
