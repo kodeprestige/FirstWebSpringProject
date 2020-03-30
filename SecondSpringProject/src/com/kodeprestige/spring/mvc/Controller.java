@@ -7,7 +7,7 @@ public class Controller {
 	
 	@RequestMapping
 	public String showPage() {
-		return "page";
+		return "Page";
 	}
 	
 }
