@@ -20,7 +20,7 @@
 	
 	</p>
 	
-	<img alt="profile picture" src="${pageContext.request.contextPath}/resources/images/back.png">
+	<img alt="profile picture" src="${pageContext.request.contextPath}/resources/images/hello_koder.png">
 
 </body>
 </html>

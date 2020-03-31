@@ -6,8 +6,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class Controller {
 	
 	@RequestMapping
-	public String showPage() {
-		return "Page";
+	public String showHome() {
+		return "Home";
 	}
 	
 }

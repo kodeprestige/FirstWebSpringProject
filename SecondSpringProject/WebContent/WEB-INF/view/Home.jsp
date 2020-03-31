@@ -11,6 +11,6 @@
 		First MVC example with Spring
 	</h1>
 	
-	<a href="showForm">Go to form</a>
+	<a href="hellokoders/showForm">Go to form</a>
 </body>
 </html>

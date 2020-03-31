@@ -1,24 +1,23 @@
 package com.kodeprestige.spring.mvc;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-@org.springframework.stereotype.Controller
-public class HelloKoders {
+@Controller
+@RequestMapping("/conflict")
+public class ConflictsController {
 	
 	@RequestMapping("/showForm")
 	public String showForm() {
 		return "HelloKodersForm";
 	}
 	
-	@RequestMapping("processForm")
-	//public String processForm(HttpServletRequest request, Model model) {
+	@RequestMapping("/processForm")
 	public String processForm(@RequestParam("koderName") String name, Model model) {
 		
-		//String name = request.getParameter("koderName");
-		
-		name += " is the best Koder";
+		name += " is the worst Koder";
 		
 		model.addAttribute("name", name);
 		
