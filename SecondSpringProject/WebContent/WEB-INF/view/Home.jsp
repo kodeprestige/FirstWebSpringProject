@@ -12,5 +12,10 @@
 	</h1>
 	
 	<a href="hellokoders/showForm">Go to form</a>
+	
+	<br><br>
+	
+	<a href="koder/form">Go to Registration Form</a>
+	
 </body>
 </html>
