@@ -16,6 +16,26 @@
 		First Name: <form:input path="firstName"/>
 		<br>
 		Last Name: <form:input path="lastName"/>
+		<br><br>
+		Sex:
+		Male<form:radiobutton path="sex" value="Male"/>
+		Female<form:radiobutton path="sex" value="Female"/>
+		
+		<br><br>
+		Languages:
+		English<form:checkbox path="languages" value="English"/>
+		Spanish<form:checkbox path="languages" value="Spanish"/>
+		Italian<form:checkbox path="languages" value="Italian"/>
+		
+		<br><br><br>
+		
+		Optional Subject:
+		<br>
+		<form:select path="optionalSubject" multiple="true">
+			<form:option value="Desing"/>
+			<form:option value="Angular"/>
+			<form:option value="NodeJS"/>
+		</form:select>
 		
 		<br><br><br>
 		
