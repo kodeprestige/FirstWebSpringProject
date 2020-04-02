@@ -7,6 +7,8 @@ import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
+
+import com.kodeprestige.spring.mvc.customValidation.ContactNumberConstraint;
 public class Koder {
 	
 	@NotEmpty(message="Requared field")
@@ -20,12 +22,16 @@ public class Koder {
 	@Max(value=100, message="Really!!! You are very old")
 	private int age;
 	
+	@ContactNumberConstraint
+	private String phone;
+	
 	private String sex;
 	
 	@NotEmpty(message="Requared field")
 	@Email
 	private String email;
 	
+	@NotEmpty(message="Requared field")
 	@Pattern(regexp="[0-9]{5}", message = "Format: 00000")
 	private String zipKode;
 	
@@ -70,6 +76,12 @@ public class Koder {
 		this.age = age;
 	}
 	
+	public String getPhone() {
+		return phone;
+	}
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
 	
 	public String getSex() {
 		return sex;

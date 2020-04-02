@@ -25,6 +25,11 @@
 		<form:errors path="age" style="color:red"></form:errors>
 		<br><br>
 		
+		
+		Phone: <form:input path="phone"/>
+		<form:errors path="phone" style="color:red"></form:errors>
+		<br><br>
+		
 		Sex:
 		Male<form:radiobutton path="sex" value="Male"/>
 		Female<form:radiobutton path="sex" value="Female"/>
