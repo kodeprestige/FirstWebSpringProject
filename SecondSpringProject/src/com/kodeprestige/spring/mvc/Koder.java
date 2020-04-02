@@ -16,7 +16,7 @@ public class Koder {
 	@Size(min=2, max=200, message="Your name must have at least two letters")
 	private String lastName;
 	
-	@Min(value=10, message="You must be over 10 years old.")
+	@Min(value=10, message="You must be over 10 years old")
 	@Max(value=100, message="Really!!! You are very old")
 	private int age;
 	
@@ -42,6 +42,13 @@ public class Koder {
 		this.firstName = name;
 	}
 	
+	public String getLastName() {
+		return lastName;
+	}
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+	
 	public String getEmail() {
 		return email;
 	}
@@ -55,14 +62,6 @@ public class Koder {
 	public void setZipKode(String zipKode) {
 		this.zipKode = zipKode;
 	}
-	
-	public String getLastName() {
-		return lastName;
-	}
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
-	}
-	
 	
 	public int getAge() {
 		return age;

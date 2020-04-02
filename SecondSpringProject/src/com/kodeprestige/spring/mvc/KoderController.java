@@ -18,7 +18,9 @@ public class KoderController {
 	@RequestMapping("/form")
 	public String showKoderForm (Model model) {
 		
-		model.addAttribute("koder", new Koder());
+		Koder koder = new Koder();
+		
+		model.addAttribute("koder", koder);
 		
 		return "KoderRegistrationForm";
 	}
