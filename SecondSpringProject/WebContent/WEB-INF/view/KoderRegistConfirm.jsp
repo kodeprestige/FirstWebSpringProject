@@ -12,6 +12,8 @@
 	You will no longer be called ${koder.firstName} ${koder.lastName}, now we will call you ${koder.firstName} KodePrestige.
 	
 	<br><br><br>
+	Age: ${koder.age}
+	<br><br><br>
 	Sex: ${koder.sex}
 	<br><br><br>
 	Languages: ${koder.languages}

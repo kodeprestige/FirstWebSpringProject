@@ -13,15 +13,29 @@
 
 	<form:form action="processForm" modelAttribute="koder">
 		
-		First Name: <form:input path="firstName"/>
-		<br>
-		Last Name: <form:input path="lastName"/>
+		First Name: <form:input path="firstName"/><br>
+		<form:errors path="firstName" style="color:red"></form:errors>
 		<br><br>
+		Last Name: <form:input path="lastName"/><br>
+		<form:errors path="lastName" style="color:red"></form:errors>
+		<br><br>
+
+
+		Age: <form:input path="age"/>
+		<form:errors path="age" style="color:red"></form:errors>
+		<br><br>
+		
 		Sex:
 		Male<form:radiobutton path="sex" value="Male"/>
 		Female<form:radiobutton path="sex" value="Female"/>
-		
 		<br><br>
+		
+		
+		Email: <form:input path="email"/>
+		<form:errors path="email" style="color:red"></form:errors>
+		<br><br>
+		
+		
 		Languages:
 		English<form:checkbox path="languages" value="English"/>
 		Spanish<form:checkbox path="languages" value="Spanish"/>
