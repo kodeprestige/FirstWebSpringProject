@@ -6,13 +6,12 @@ import javax.validation.constraints.Min;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
-
 public class Koder {
 	
 	@NotEmpty(message="Requared field")
 	private String firstName;
 
-	@NotNull
+	@NotNull(message="Requared field")
 	@Size(min=2, max=200, message="Your name must have at least two letters")
 	private String lastName;
 	

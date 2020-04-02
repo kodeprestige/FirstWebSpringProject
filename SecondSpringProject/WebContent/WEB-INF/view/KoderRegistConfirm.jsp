@@ -8,8 +8,8 @@
 </head>
 <body>
 
-	Thanks for registering, ${koder.firstName}. Welcome to the KodePrestige family.
-	You will no longer be called ${koder.firstName} ${koder.lastName}, now we will call you ${koder.firstName} KodePrestige.
+	Thanks for registering, <strong>${koder.firstName}</strong>. Welcome to the <strong>KodePrestige family</strong>.
+	You will no longer be called <strong>${koder.firstName} ${koder.lastName}</strong>, now we will call you <strong>${koder.firstName} KodePrestige</strong>.
 	
 	<br><br><br>
 	Age: ${koder.age}

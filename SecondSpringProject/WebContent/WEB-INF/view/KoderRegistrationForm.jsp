@@ -13,10 +13,10 @@
 
 	<form:form action="processForm" modelAttribute="koder">
 		
-		First Name: <form:input path="firstName"/><br>
+		First Name: <form:input path="firstName"/>
 		<form:errors path="firstName" style="color:red"></form:errors>
 		<br><br>
-		Last Name: <form:input path="lastName"/><br>
+		Last Name: <form:input path="lastName"/>
 		<form:errors path="lastName" style="color:red"></form:errors>
 		<br><br>
 
