@@ -35,6 +35,10 @@
 		<form:errors path="email" style="color:red"></form:errors>
 		<br><br>
 		
+		ZIP "Kode": <form:input path="zipKode"/>
+		<form:errors path="zipKode" style="color:red"></form:errors>
+		<br><br>
+		
 		
 		Languages:
 		English<form:checkbox path="languages" value="English"/>

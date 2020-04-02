@@ -5,6 +5,7 @@ import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 public class Koder {
 	
@@ -25,6 +26,9 @@ public class Koder {
 	@Email
 	private String email;
 	
+	@Pattern(regexp="[0-9]{5}", message = "Format: 00000")
+	private String zipKode;
+	
 	private String languages;
 	
 	private String optionalSubject;
@@ -43,6 +47,13 @@ public class Koder {
 	}
 	public void setEmail(String email) {
 		this.email = email;
+	}
+	
+	public String getZipKode() {
+		return zipKode;
+	}
+	public void setZipKode(String zipKode) {
+		this.zipKode = zipKode;
 	}
 	
 	public String getLastName() {
@@ -83,5 +94,7 @@ public class Koder {
 	public void setOptionalSubject(String optionalSubject) {
 		this.optionalSubject = optionalSubject;
 	}
+	
+	
 
 }
